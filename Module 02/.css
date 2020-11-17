@@ -1,1 +1,12 @@
-
+p {
+    font-size: large;
+    color:green;
+}
+h1{
+    font-size: xx-large;
+    color: blue;
+}
+h2{
+    font-size: x-large;
+    color: red;
+}
