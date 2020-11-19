@@ -1,0 +1,48 @@
+<template>
+
+      <div class="class=slds-m-around_medium" >
+            <lightning-card title="For:each Demo"> 
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                        <thead>
+                                <tr class="slds-line-height_reset">
+                                        <th class="" scope="col">
+                                          <div class="slds-truncate" title="Key">Index</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                          <div class="slds-truncate" title="Id">Id</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Name">Name</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="Email">Email</div>
+                                        </th>
+                                    </tr>
+                        </thead>
+                        <tbody>
+                                <template if:true={contacts.length} for:each={contacts} for:item='con' for:index="index">
+                                        <tr key={con.Index}>
+                                                <th scope="col">
+                                                        {con.Index}
+                                                    </th>
+                                                <th scope="col">
+                                                    {con.Id}
+                                                </th>
+                                             <th scope="col">
+                                                 {con.Name}
+                                                </th>
+                                                <th scope="col">
+                                                  {con.Email}
+                                                </th>
+                                            </tr>
+                                            </template>
+                        </tbody>
+                </table>
+                    
+            </lightning-card>
+
+                
+        </div>
+    
+    
+</template>
