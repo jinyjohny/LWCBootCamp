@@ -1,0 +1,26 @@
+<template>
+    <template if:true={showButton}>
+        <img src="https://i.pinimg.com/474x/92/a6/2f/92a62f0221f58fe503a15fcb13f5c107--tom-jerry-movies-.jpg">
+            <lightning-button
+            label='Show Jerry'
+            variant='brand'
+            onclick={showJerryClicked}>
+            </lightning-button>
+
+    </template>
+
+
+<template if:false={showButton}>
+   <img src="https://i.pinimg.com/originals/c6/f2/bc/c6f2bc8b619df4a9867e0d82d229ae89.jpg">  
+
+   <lightning-button
+        label='Show Tom'
+        variant='brand'
+        onclick={showTomClicked}>
+    </lightning-button>
+
+</template>
+
+
+    
+</template>
