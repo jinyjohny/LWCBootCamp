@@ -1,0 +1,15 @@
+<template>
+    <div class="class=slds-m-around_medium" >
+        <lightning-card title="Iterator Demo">
+                <div class="slds-border_bottom">
+                    </div>
+           
+            <template iterator:con={contacts}>
+            <div class="slds-box" key={con.value.Index}>
+                {con.value.Name} - {con.value.Email}
+            </div>
+            </template>
+        
+        </lightning-card>
+    </div>
+</template>
